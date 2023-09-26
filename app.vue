@@ -7,9 +7,10 @@
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <h1 class="pt-20 text-xl text-gray-500 text font-bold text-justify">
-        Está pensando em dizquer que está calor ? Ao menos seja criativo
+      <h1 class="pt-20 text-xl text-gray-500 font-bold text-justify">
+        Está pensando em dizer que está calor ?
       </h1>
+      <h2 class="text-xl text-gray-500 text-justify">Ao menos seja criativo</h2>
       <button
         type="button"
         class="rounded-md bg-sundark-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sundark-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sundark-600"

@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 const brand = {
   sunglow: {
     50: "#fefae8",
@@ -34,6 +36,10 @@ export default {
         ...brand,
       },
     },
+  },
+  fontFamily: {
+    sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+    cursive: ["cursive"],
   },
   plugins: [],
 };

@@ -4,6 +4,7 @@
 
 @layer base {
     html {
+        scroll-behavior: smooth;
         @apply h-full;
     }
     body {
@@ -16,6 +17,7 @@
             #ffecd4 57.57%, 
             #ffd6a8 100%
         ) fixed;
+        font-family: 'Poppins', sans-serif;
     }
     h1, h2, h3, h4, h5, h6 {
         @apply mb-5;

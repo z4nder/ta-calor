@@ -2,4 +2,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@tresjs/nuxt"],
+  app: {
+    head: {
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/bg_logo.png" },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap",
+        },
+      ],
+    },
+  },
 });
