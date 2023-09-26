@@ -60,7 +60,7 @@ const gridBlocks = [
 
           <a
             href="#"
-            class="group mt-4 inline-flex items-center gap-2 rounded-lg bg-sundark-600 px-5 py-2.5 font-display text-xs font-medium tracking-wide text-white transition hover:bg-white/10 md:mt-8"
+            class="group mt-4 inline-flex items-center gap-2 rounded-lg bg-sundark-600 px-5 py-2.5 font-display text-xs font-medium tracking-wide text-white transition hover:bg-sundark-500 md:mt-8"
           >
             <span class="relative">Copiar</span>
 
