@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@tresjs/nuxt": "^1.1.7",
+    "@vueuse/core": "^10.4.1",
     "three": "^0.156.1"
   }
 }
