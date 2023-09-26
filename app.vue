@@ -8,7 +8,7 @@ const gridBlocks = [
 
 <template>
   <div class="flex justify-center items-center flex-col">
-    <img src="sun.png" class="h-96 w-96 mr-10" />
+    <img src="@/assets/img/sun.png" class="h-96 w-96 mr-10" />
     <!-- Colocar ref para o autor da imagem https://pt.pngtree.com/so/sol-3d -->
 
     <div class="flex flex-col justify-center items-center px-5 sm:px-0">
