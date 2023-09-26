@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@tresjs/nuxt"],
   app: {
     head: {
+      title: "Ta Calor",
       link: [
         { rel: "icon", type: "image/x-icon", href: "/bg_logo.png" },
         {
