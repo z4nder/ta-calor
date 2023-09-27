@@ -7,24 +7,33 @@ const gridBlocks = [
 </script>
 
 <template>
-  <div class="flex justify-center items-center flex-col">
-    <img src="@/assets/img/sun.png" class="h-96 w-96 mr-10" />
+  <div class="flex justify-center items-center flex-col px-5">
+    <nuxt-img
+      format="png"
+      src="img/sun.png"
+      width="400"
+      height="400"
+      alt="Imagem de um sol sorrindo com oculos escuro"
+      class="py-4"
+    />
     <!-- Colocar ref para o autor da imagem https://pt.pngtree.com/so/sol-3d -->
 
-    <div class="flex flex-col justify-center items-center px-5 sm:px-0">
-      <h1 class="pt-20 text-xl text-gray-500 font-bold text-justify">
+    <div class="flex flex-col justify-center items-center gap-5">
+      <h1 class="text-2xl text-gray-500 font-bold text-center">
         Está pensando em dizer que está calor ?
       </h1>
       <h2 class="text-xl text-gray-500 text-center">Ao menos seja criativo</h2>
-      <button
-        type="button"
-        class="rounded-md bg-sundark-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sundark-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sundark-600"
-      >
-        Gerar frase
-      </button>
+      <div class="w-full h-full px-10 sm:w-3/4">
+        <button
+          type="button"
+          class="w-full h-full rounded-md bg-sundark-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sundark-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sundark-600"
+        >
+          Gerar frase
+        </button>
+      </div>
     </div>
 
-    <div class="pt-10">
+    <div class="py-5">
       <SpotlightCard
         from="#fefae8"
         via="#ffcc33"
