@@ -30,14 +30,20 @@ const footer = {
         Está pensando em dizer que está calor ?
       </h1>
       <h2 class="text-xl text-gray-500 text-center">Ao menos seja criativo</h2>
-      <div class="w-full h-full px-10 sm:w-3/4">
-        <button
+
+      <!-- <button
           type="button"
           class="w-full h-full rounded-md bg-sundark-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sundark-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sundark-600"
         >
           Gerar frase
-        </button>
-      </div>
+        </button> -->
+      <v-button
+        size="base"
+        variant="primary"
+        :icon-left="['fab', 'github']"
+        text="GitHub"
+        :class="{ '!pointer-events-none': loading }"
+      />
     </div>
 
     <div class="py-5">
