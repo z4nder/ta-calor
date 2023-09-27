@@ -4,6 +4,14 @@ const gridBlocks = [
   [3, 1],
   [4, 3],
 ];
+
+const footer = {
+  main: [
+    { tag: "Code", name: "Z4nder", href: "https://z4nder.dev" },
+    { tag: "Community", name: "Hive", href: "https://hivecommunity.dev" },
+    { tag: "Design", name: "Gaby", href: "https://linkme.bio/gabydpereira" },
+  ],
+};
 </script>
 
 <template>
@@ -96,5 +104,24 @@ const gridBlocks = [
         </div>
       </SpotlightCard>
     </div>
+
+    <footer class="">
+      <div class="mx-auto max-w-7xl overflow-hidden px-6 pt-24 lg:px-8">
+        <nav
+          class="-mb-6 columns-3 sm:flex sm:justify-center sm:space-x-12"
+          aria-label="Footer"
+        >
+          <div v-for="item in footer.main" :key="item.name" class="pb-6">
+            <a
+              target="_blank"
+              :href="item.href"
+              class="text-sm leading-6 text-gray-500 hover:text-gray-600"
+            >
+              {{ item.name }}
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
   </div>
 </template>
