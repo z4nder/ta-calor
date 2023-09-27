@@ -12,13 +12,12 @@ const gridBlocks = [
       format="png"
       src="img/sun.png"
       width="400"
-      height="400"
+      height="380"
       alt="Imagem de um sol sorrindo com oculos escuro"
-      class="py-4"
     />
     <!-- Colocar ref para o autor da imagem https://pt.pngtree.com/so/sol-3d -->
 
-    <div class="flex flex-col justify-center items-center gap-5">
+    <div class="flex flex-col justify-center items-center gap-2 py-5">
       <h1 class="text-2xl text-gray-500 font-bold text-center">
         Está pensando em dizer que está calor ?
       </h1>
