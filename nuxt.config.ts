@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      gtagId: process.env.GOOGLE_TAG_ID,
+      google_analytics_id: process.env.GOOGLE_TAG_ID,
     },
   },
 });
