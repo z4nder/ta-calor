@@ -108,10 +108,7 @@ const footer = {
 
     <footer class="">
       <div class="mx-auto max-w-7xl overflow-hidden px-6 pt-24 lg:px-8">
-        <nav
-          class="-mb-6 columns-3 sm:flex sm:justify-center sm:space-x-12"
-          aria-label="Footer"
-        >
+        <nav class="-mb-6 flex gap-8" aria-label="Footer">
           <div v-for="item in footer.main" :key="item.name" class="pb-6">
             <a
               target="_blank"
