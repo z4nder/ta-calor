@@ -1,4 +1,6 @@
 <script setup>
+const { currentPhrase, drawPhrase } = usePhrase();
+
 const gridBlocks = [
   [2, 5],
   [3, 1],
@@ -30,19 +32,13 @@ const footer = {
         Está pensando em dizer que está calor ?
       </h1>
       <h2 class="text-xl text-gray-500 text-center">Ao menos seja criativo</h2>
-
-      <!-- <button
-          type="button"
-          class="w-full h-full rounded-md bg-sundark-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sundark-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sundark-600"
-        >
-          Gerar frase
-        </button> -->
       <v-button
         size="base"
         variant="primary"
         :icon-left="['fab', 'github']"
         text="GitHub"
         :class="{ '!pointer-events-none': loading }"
+        @click="drawPhrase"
       />
     </div>
 
@@ -76,8 +72,7 @@ const footer = {
           <div
             class="font-display text-lg font-semibold text-white md:text-2xl"
           >
-            O sol está sorrindo tão brilhante que até os pássaros estão buscando
-            sombra.
+            {{ currentPhrase.text }}
           </div>
 
           <a
