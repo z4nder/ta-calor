@@ -18,13 +18,20 @@ const footer = {
 
 <template>
   <div class="flex justify-center items-center flex-col px-5">
-    <nuxt-img
-      format="png"
-      src="img/sun.png"
-      width="400"
-      height="380"
-      alt="Imagem de um sol sorrindo com oculos escuro"
-    />
+    <a
+      class="hover:cursor-pointer"
+      target="_blank"
+      href="https://pt.pngtree.com/freepng/3d-sun-with-a-smiling-face-wearing-sunglasses_11129967.html"
+    >
+      <nuxt-img
+        format="png"
+        src="img/sun.png"
+        width="400"
+        height="380"
+        alt="Imagem de um sol sorrindo com oculos escuro"
+      />
+    </a>
+
     <!-- Colocar ref para o autor da imagem https://pt.pngtree.com/so/sol-3d -->
 
     <div class="flex flex-col justify-center items-center gap-2 py-5">

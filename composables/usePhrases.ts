@@ -1,5 +1,5 @@
 export const usePhrase = () => {
-  const { $clipboard } = useNuxtApp();
+  const { $clipboard, $toast } = useNuxtApp();
   const phrases = phrasesManager.getPharases();
 
   const currentPhrase = ref(phrases[0]);
@@ -11,6 +11,7 @@ export const usePhrase = () => {
 
   function copyCurrentPhrase() {
     $clipboard(currentPhrase.value.text);
+    $toast("Copiado com sucesso");
   }
 
   return {
