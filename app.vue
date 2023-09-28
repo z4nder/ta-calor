@@ -1,4 +1,6 @@
 <script setup>
+import "~/assets/css/toast.scss";
+
 const { currentPhrase, drawPhrase, copyCurrentPhrase } = usePhrase();
 
 const gridBlocks = [
