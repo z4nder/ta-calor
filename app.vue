@@ -19,6 +19,19 @@ const footer = {
 <template>
   <div class="flex justify-center items-center flex-col px-5">
     <a
+      v-motion="{
+        initial: {
+          y: -500,
+          opacity: 0,
+        },
+        enter: {
+          y: 0,
+          opacity: 1,
+          transition: {
+            damping: 50,
+          },
+        },
+      }"
       class="hover:cursor-pointer"
       target="_blank"
       href="https://pt.pngtree.com/freepng/3d-sun-with-a-smiling-face-wearing-sunglasses_11129967.html"

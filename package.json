@@ -20,6 +20,7 @@
     "@soerenmartius/vue3-clipboard": "^0.1.2",
     "@tresjs/nuxt": "^1.1.7",
     "@vueuse/core": "^10.4.1",
+    "@vueuse/motion": "^2.0.0",
     "three": "^0.156.1",
     "vue3-toastify": "^0.1.13"
   }

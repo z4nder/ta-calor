@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@tresjs/nuxt", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@tresjs/nuxt",
+    "@nuxt/image",
+    "@vueuse/motion/nuxt",
+  ],
   app: {
     head: {
       title: "Tá Calor",
