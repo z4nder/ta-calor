@@ -22,4 +22,29 @@
     h1, h2, h3, h4, h5, h6 {
         @apply mb-5;
     }
+    
 }
+
+:root {
+    --toastify-color-with: #fff;
+    --toastify-color-light: #fd6e12;
+    
+    --toastify-toast-width: 320px;
+    --toastify-toast-min-height: 64px;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-family: Poppins;
+    --toastify-z-index: 9999;
+  
+    --toastify-text-color-light: #fff;
+    --toastify-text-color-dark: #fff;
+  
+    --toastify-color-progress-light: linear-gradient(
+      to right,
+      #fdb912,
+      #fdb912,
+      #ec9f06,
+      #cc7902,
+      #a35405,
+      #86420d
+    );
+  }
