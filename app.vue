@@ -1,5 +1,5 @@
 <script setup>
-const { currentPhrase, drawPhrase } = usePhrase();
+const { currentPhrase, drawPhrase, copyCurrentPhrase } = usePhrase();
 
 const gridBlocks = [
   [2, 5],
@@ -75,8 +75,8 @@ const footer = {
             {{ currentPhrase.text }}
           </div>
 
-          <a
-            href="#"
+          <button
+            @click="copyCurrentPhrase"
             class="group mt-4 inline-flex items-center gap-2 rounded-lg bg-sundark-600 px-5 py-2.5 font-display text-xs font-medium tracking-wide text-white transition hover:bg-sundark-500 md:mt-8"
           >
             <span class="relative">Copiar</span>
@@ -101,7 +101,7 @@ const footer = {
                 />
               </svg>
             </span>
-          </a>
+          </button>
         </div>
       </SpotlightCard>
     </div>

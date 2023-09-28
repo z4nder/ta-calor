@@ -8,6 +8,9 @@ export default {
       {
         text: "O sol está sorrindo tão brilhante que até os pássaros estão buscando sombra.",
       },
+      {
+        text: "O calor é psicológico.",
+      },
       { text: "Hoje está tão quente que o asfalto está derretendo." },
       {
         text: "Parece que o verão decidiu dar as boas-vindas com um abraço quente hoje.",

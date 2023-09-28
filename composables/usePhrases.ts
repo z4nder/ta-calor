@@ -1,4 +1,5 @@
 export const usePhrase = () => {
+  const { $clipboard } = useNuxtApp();
   const phrases = phrasesManager.getPharases();
 
   const currentPhrase = ref(phrases[0]);
@@ -8,8 +9,13 @@ export const usePhrase = () => {
     currentPhrase.value = phrases[randomIndex];
   }
 
+  function copyCurrentPhrase() {
+    $clipboard(currentPhrase.value.text);
+  }
+
   return {
     currentPhrase,
     drawPhrase,
+    copyCurrentPhrase,
   };
 };

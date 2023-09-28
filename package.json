@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.0.0-rc.2",
+    "@soerenmartius/vue3-clipboard": "^0.1.2",
     "@tresjs/nuxt": "^1.1.7",
     "@vueuse/core": "^10.4.1",
     "three": "^0.156.1"
